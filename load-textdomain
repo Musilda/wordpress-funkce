@@ -1,0 +1,12 @@
+
+$domain = 'domain-slug';
+$locale = apply_filters( 'plugin_locale', get_locale(), $domain );
+load_textdomain( $domain, trailingslashit( WP_LANG_DIR ) . $domain . '/' . $domain . '-' . $locale . '.mo' );
+
+//Pro šablonu
+//Jazykové soubory po a mo je třeba umístit do složky languages
+//Celá cesta pak bude wp-content/themes/theme-dir-name/languages/theme-name-cs_CZ.po - pro český jazyk
+$theme_dir = get_theme_root( 'theme-dir-name' );
+$domain = 'theme-name';
+$locale = apply_filters( 'plugin_locale', get_locale(), $domain );
+load_textdomain( $domain, $theme_dir . '/languages/' . $domain . '-' . $locale . '.mo' );
