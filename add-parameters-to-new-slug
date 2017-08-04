@@ -1,0 +1,10 @@
+/**
+ * Funkce zahová get parametr v url, při změně slug u postu
+ *
+ */
+ add_filter( 'old_slug_redirect_url', function( $link ) {
+    if ( true === isset( $_GET['par'] ) && false === empty( $_GET['par'] ) ) {
+        $link = add_query_arg( 'par', $_GET['par'], $link );
+    }
+    return $link;
+}, 10, 1 );
