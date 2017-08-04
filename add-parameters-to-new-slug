@@ -1,5 +1,5 @@
 /**
- * Funkce zahová get parametr v url, při změně slug u postu
+ * Funkce zachová get parametr v url, při změně slug u postu
  *
  */
  add_filter( 'old_slug_redirect_url', function( $link ) {
