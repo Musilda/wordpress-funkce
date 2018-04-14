@@ -1,14 +1,14 @@
-ALTER TABLE wp_termmeta MODIFY COLUMN meta_id bigint(20) unsigned NOT NULL auto_increment;
-ALTER TABLE wp_terms MODIFY COLUMN term_id bigint(20) unsigned NOT NULL auto_increment;
-ALTER TABLE wp_term_taxonomy MODIFY COLUMN term_taxonomy_id bigint(20) unsigned NOT NULL auto_increment;
-ALTER TABLE wp_commentmeta MODIFY COLUMN meta_id bigint(20) unsigned NOT NULL auto_increment;
-ALTER TABLE wp_comments MODIFY COLUMN comment_ID bigint(20) unsigned NOT NULL auto_increment;
-ALTER TABLE wp_links MODIFY COLUMN link_id bigint(20) unsigned NOT NULL auto_increment;
-ALTER TABLE wp_options MODIFY COLUMN option_id bigint(20) unsigned NOT NULL auto_increment;
-ALTER TABLE wp_postmeta MODIFY COLUMN meta_id bigint(20) unsigned NOT NULL auto_increment;
-ALTER TABLE wp_users MODIFY COLUMN ID bigint(20) unsigned NOT NULL auto_increment;
-ALTER TABLE wp_posts MODIFY COLUMN ID bigint(20) unsigned NOT NULL auto_increment;
-ALTER TABLE wp_usermeta MODIFY COLUMN umeta_id bigint(20) unsigned NOT NULL auto_increment;
+ALTER TABLE wp_termmeta MODIFY COLUMN meta_id bigint(20) unsigned NOT NULL AUTO_INCREMENT PRIMARY KEY;
+ALTER TABLE wp_terms MODIFY COLUMN term_id bigint(20) unsigned NOT NULL AUTO_INCREMENT PRIMARY KEY;
+ALTER TABLE wp_term_taxonomy MODIFY COLUMN term_taxonomy_id bigint(20) unsigned NOT NULL AUTO_INCREMENT PRIMARY KEY;
+ALTER TABLE wp_commentmeta MODIFY COLUMN meta_id bigint(20) unsigned NOT NULL AUTO_INCREMENT PRIMARY KEY;
+ALTER TABLE wp_comments MODIFY COLUMN comment_ID bigint(20) unsigned NOT NULL AUTO_INCREMENT PRIMARY KEY;
+ALTER TABLE wp_links MODIFY COLUMN link_id bigint(20) unsigned NOT NULL AUTO_INCREMENT PRIMARY KEY;
+ALTER TABLE wp_options MODIFY COLUMN option_id bigint(20) unsigned NOT NULL AUTO_INCREMENT PRIMARY KEY;
+ALTER TABLE wp_postmeta MODIFY COLUMN meta_id bigint(20) unsigned NOT NULL AUTO_INCREMENT PRIMARY KEY;
+ALTER TABLE wp_users MODIFY COLUMN ID bigint(20) unsigned NOT NULL AUTO_INCREMENT PRIMARY KEY;
+ALTER TABLE wp_posts MODIFY COLUMN ID bigint(20) unsigned NOT NULL AUTO_INCREMENT PRIMARY KEY;
+ALTER TABLE wp_usermeta MODIFY COLUMN umeta_id bigint(20) unsigned NOT NULL AUTO_INCREMENT PRIMARY KEY;
 
 CREATE INDEX term_id on wp_termmeta (term_id);
 CREATE INDEX meta_key on wp_termmeta (meta_key(191));
