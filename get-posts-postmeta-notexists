@@ -1,0 +1,13 @@
+$args = array(
+    'post_type' => 'post',
+    'post_status' => 'any',
+    'posts_per_page' => 2,
+    'meta_query' => array(
+        
+        array(
+            'key' => 'postmetaname',
+            'compare' => 'NOT EXISTS'
+        )        
+    )
+);
+$newquery = new WP_Query( $args );
