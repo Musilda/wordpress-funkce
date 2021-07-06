@@ -9,3 +9,6 @@ define( 'WP_AUTO_UPDATE_CORE', true );
 
 // Enables minor updates:
 define( 'WP_AUTO_UPDATE_CORE', 'minor' );
+
+// Disable file editor
+define( 'DISALLOW_FILE_MODS', true );
