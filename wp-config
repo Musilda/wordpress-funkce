@@ -1,3 +1,11 @@
 //Increase memory limit
 define('WP_MEMORY_LIMIT', '256M');
 
+// Disables all core updates:
+define( 'WP_AUTO_UPDATE_CORE', false );
+
+// Enables all core updates, including minor and major:
+define( 'WP_AUTO_UPDATE_CORE', true );
+
+// Enables minor updates:
+define( 'WP_AUTO_UPDATE_CORE', 'minor' );
