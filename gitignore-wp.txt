@@ -1,0 +1,31 @@
+# Ignore everything in the "wp-content" directory
+/wp-admin/*
+# Ignore everything in the "wp-content" directory
+/wp-includes/*
+
+# Ignore files in the root directory
+xmlrpc.php
+.htaccess
+index.php
+license.txt
+readme.html
+README.md
+wp-activate.php
+wp-blog-header.php
+wp-comments-post.php
+wp-config.php
+wp-cron.php
+wp-links-opml.php
+wp-load.php
+wp-login.php
+wp-mail.php
+wp-settings.php
+wp-signup.php
+wp-trackback.php
+
+# Ignore everything in the "wp-content" directory, except custom code.
+/wp-content/languages/*
+/wp-content/uploads/*
+/wp-content/plugins/*
+!wp-content/plugins/profitblue
+/wp-content/themes/*
